@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* contact  */
+.contact {
+  position: relative;
+  margin-top: 50px;
+  min-height: 100vh;
+  padding: 50px 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../Background/bg.jpg");
+  background-size: cover;
+  position: absolute;
+  color: black;
+  border: 2px solid;
+}
+.contact .contents {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 25px;
+}
+.contact .contents h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+/* akhir contact  */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contact-info.box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contact-info .box .icon {
+  width: 10%;
+  padding: 25px 25px;
+  background: rgb(141, 136, 136);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.container .contact-info .box .text {
+  display: flex;
+  margin-left: 70px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 200;
+}
+.container .contact-info .box .text h5 {
+  font-weight: 500;
+  color: rgb(102, 5, 5);
+  font-size: 20px;
+}
+.contact-form {
+  width: 60%;
+  padding: 50px;
+  background: #fff;
+}
+.contact-form h5 {
+  font-size: 20px;
+  color: rgb(37, 36, 36);
+  font-weight: 500;
+}
+.contact-form .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contact-form .inputBox input,
+.contact-form .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid rgb(19, 19, 19);
+  outline: none;
+  resize: none;
+}
+.contact-form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: rgb(104, 5, 5);
+}
+.contact-form .inputBox input:focus ~ span,
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:focus ~ span,
+.contact-form .inputBox textarea:valid ~ span {
+  color: rgb(78, 75, 75);
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contact-form .inputBox input[type="submit"] {
+  width: 100px;
+  background: rgb(104, 2, 2);
+  color: rgb(187, 169, 3);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+@media (max-width: 760px) {
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .contact-info {
+    margin-bottom: 20px;
+  }
+
+  .container .contact-info {
+    width: 100%;
+  }
+  .contact-form {
+    padding: 40px;
+    width: 140%;
+  }
+}
+.sosmed {
+  padding-top: 25px;
+  color: rgb(27, 26, 26);
+  transition: color 0.4s ease;
+}
+.sosmed a:hover {
+  color: rgb(70, 5, 5);
+}
+.sosmed a {
+  text-decoration: none;
+  color: rgb(36, 33, 33);
+}
